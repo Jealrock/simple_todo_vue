@@ -6,7 +6,7 @@
 
 <script>
 import TodoList from '../components/TodoList.vue'
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default {
 
@@ -15,8 +15,8 @@ export default {
   },
 
   computed: {
-    ...mapState({
-      todoList: state => state.todo.items.sort((item) => item.completed)
+    ...mapGetters({
+      todoList: 'todo/todosSorted'
     })
   }
 

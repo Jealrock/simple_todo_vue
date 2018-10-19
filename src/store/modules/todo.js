@@ -1,6 +1,5 @@
 const state = {
-  items: [
-  ],
+  items: [],
   current_id: 1
 }
 
@@ -24,8 +23,19 @@ const mutations = {
   }
 }
 
+const getters = {
+  todosFiltered: (state) => ({ completed }) => {
+    return state.items.filter(item => item.completed === completed)
+  },
+
+  todosSorted: (state) => {
+    return state.items.concat().sort(item => item.completed)
+  }
+}
+
 export default {
   namespaced: true,
   state,
-  mutations
+  mutations,
+  getters
 }

@@ -23,7 +23,6 @@
               <v-tab to="/active" > Active </v-tab>
               <v-tab to="/done" > Done </v-tab>
             </v-tabs>
-
             <router-view></router-view>
           </v-card>
 
@@ -41,4 +40,5 @@ export default {
     TodoListNewInput
   }
 }
+
 </script>

@@ -1,11 +1,11 @@
 <template>
   <v-list>
     <template v-if="todoList.length">
-      <todo-list-item
+      <TodoListItem
         v-for="item in todoList"
         :key="item.id"
         :todoItem="item"
-      ></todo-list-item>
+      ></TodoListItem>
     </template>
 
     <v-list-tile v-else>

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import All from './views/All.vue'
-import Active from './views/Active.vue'
-import Done from './views/Done.vue'
+import AllTodos from './views/AllTodos.vue'
+import ActiveTodos from './views/ActiveTodos.vue'
+import DoneTodos from './views/DoneTodos.vue'
 
 Vue.use(Router)
 
@@ -13,17 +13,17 @@ export default new Router({
     {
       path: '/',
       name: 'all',
-      component: All
+      component: AllTodos
     },
     {
       path: '/active',
       name: 'active',
-      component: Active
+      component: ActiveTodos
     },
     {
       path: '/done',
       name: 'done',
-      component: Done
+      component: DoneTodos
     }
   ]
 })

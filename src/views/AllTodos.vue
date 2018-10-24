@@ -16,7 +16,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      todoList: 'todo/todosSorted'
+      todoList: 'todo/todos'
     })
   }
 

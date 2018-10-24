@@ -28,7 +28,7 @@ const getters = {
     return state.items.filter(item => item.completed === completed)
   },
 
-  todosSorted: (state) => {
+  todos: (state) => {
     return state.items.concat().sort(item => item.completed)
   }
 }
